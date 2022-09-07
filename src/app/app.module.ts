@@ -21,7 +21,8 @@ import { EntViewComponent } from './ent-view/ent-view.component';
 import { OrgViewComponent } from './org-view/org-view.component';
 import { SettingsComponent } from './settings/settings.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
-import { HttpClientModule } from '@angular/common/http'; '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'; '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { HttpClientModule } from '@angular/common/http'; '@angular/common/http'
     MatTabsModule,
     MatListModule,
     HttpClientModule,
-    MatTreeModule
+    MatTreeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

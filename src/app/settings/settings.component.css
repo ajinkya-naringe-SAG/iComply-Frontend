@@ -1,0 +1,28 @@
+.top-navbar {
+    background-color: white;
+    margin-bottom: 1vh;
+    height: 6vh;
+}
+
+.main-content {
+    background-color: #f5f5f5;
+}
+
+.card-title {
+    font-size: 2vh;
+}
+
+.repo-master {
+    display: flex;
+    align-content: flex-start;
+}
+
+.repo-left {
+    width: 25%;
+    margin: 0.7vh 0.7vh 0.7vh 1vh;
+}
+
+.repo-right {
+    width: 75%;
+    margin: 0.7vh 1vh 0.7vh 0.5vh;
+}

@@ -1,0 +1,101 @@
+<mat-toolbar color="primary" class="top-navbar">
+    <span style="color: black; font-size: 2.7vh;">Organisation View</span>
+</mat-toolbar>
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title style="font-size: 2vh;">
+                Filter
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div>
+            <mat-form-field>
+                <mat-label>Select Org</mat-label>
+                <mat-select>
+                    <mat-option>
+                        <mat-checkbox>C2E</mat-checkbox>
+                    </mat-option>
+                    <mat-option>
+                        <mat-checkbox>ARIS</mat-checkbox>
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+<div>
+    <div>
+        <span style="display: flex; justify-content: space-between; margin-top: 1vh; align-items: center;">
+            <span style="margin-left: 1vw; margin-bottom: 1vh; font-size: 2.5vh;">Selected Org Name</span>
+            <span style="margin-right: 1vw; margin-bottom: 0.1vw; font-size: 1.5vh;">last updated [time-stamp]</span>
+        </span>
+        
+    </div>
+    <div class="repo-master">
+        <div class="repo-left">
+            <mat-card style="height: 90vh;">
+                <mat-card-title class="card-title">Organisation Highlights</mat-card-title>
+                <mat-list>
+                    <mat-list-item><b>No. of Repositories: 3</b></mat-list-item>
+                    <mat-list-item><b>No. of Contributers: 10</b></mat-list-item>
+                    <mat-list-item><b>No. of Custom roles: 2</b></mat-list-item>
+                    <mat-list-item><b>No. of Github Apps: 2</b></mat-list-item>
+                    <mat-list-item><b>Secrets Stats:</b></mat-list-item>
+                    <mat-list-item>
+                        <div>
+                            <mat-list style="margin-top: 10vh;">
+                                <mat-list-item>Environment Secrets: 5</mat-list-item>
+                                <mat-list-item>Repository Secrets: 3</mat-list-item>
+                                <mat-list-item>Organisation Secrets: 2</mat-list-item>
+                            </mat-list>
+                        </div>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card>
+        </div>
+
+        <div class="repo-right">
+            <mat-card style="margin-bottom: 1vh; height: 25vh;">
+                <mat-card-title class="card-title">Compliance Statistics</mat-card-title>
+                <div style="display:flex; justify-content: space-around;">
+                    <div style="text-align: center;">
+                        <div style="display: block">
+                            <canvas id="org-pie-chart-1" class="pie-graph"></canvas>
+                        </div>
+                        <div style="display: inline-block; font-size: 4vh; margin-top: 2vh; position: absolute; bottom: 13.5vh; left: 28vh;">
+                            3/5
+                        </div>
+                        <div>
+                            Settings out of compliance
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="display: block">
+                            <canvas id="org-pie-chart-2" class="pie-graph"></canvas>
+                        </div>
+                        <div style="display: inline-block; font-size: 4vh; margin-top: 2vh; position: absolute; bottom: 13.5vh; right: 28vh;">
+                            12/16
+                        </div>
+                        <div>
+                            Repositories out of compliance
+                        </div>
+                    </div>
+                </div>
+                
+            </mat-card>
+            <mat-card style="height: 34.7vh;">
+                <mat-card-title class="card-title">Compliance Trend for Organisation Settings</mat-card-title>
+                <div style="display: block">
+                    <canvas id="org_comp_stats" class="trend-graph"></canvas>
+                </div>
+            </mat-card>
+            <mat-card style="height: 34.7vh; margin-top: 1vh;">
+                <mat-card-title class="card-title">Compliance Trend for Organisation Repositories</mat-card-title>
+                <div style="display: block">
+                    <canvas id="org_repo_stats" class="trend-graph"></canvas>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    
+</div>
